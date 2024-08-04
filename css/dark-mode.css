@@ -1,0 +1,38 @@
+:root:has(.mode:checked) {
+    --primary-color :rgb(193, 126, 31);
+    --secondary-color :rgb(23, 23, 23);
+    --global-color: #fff;
+    --color-grey: #9f9f9f;
+    --color-light-grey: #252525;
+    --background-color:rgb(32, 32, 32);
+    --sub-section-color: rgb(23, 23, 23);
+    --sub-2-section-color: rgb(23, 23, 23);
+
+  }
+  
+  :root:has(.mode:checked) body {
+    background-color: var(--background-color);
+    color: rgb(23, 23, 23)
+  }
+
+  :root:has(.mode:checked) .mode-group .dark {
+    display: none;
+  }
+  
+  :root:has(.mode:checked) .mode-group .light {
+    display: block;
+  }
+
+  body:has(.mode:checked) nav .nav-content .nav-links a:hover {
+    color: #fff;
+  }
+  
+  body:has(.mode:checked) .header-content p {
+    color: var(--color-grey);
+  }
+  
+  body:has(.mode:checked) .chefs .chefs-content .section .image::before {
+    background-image: url(../images/team-shape-dark.svg);
+  }
+
+  
